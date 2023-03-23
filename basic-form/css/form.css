@@ -21,7 +21,7 @@ div#formcol1 label {
 	text-align:left;
 	display:block;
 	padding-right:.3em;	
-	background:#E0E0DD;
+	/* background:#E0E0DD; */
 	clear:right;
 	}
 	
@@ -64,8 +64,31 @@ div#formcol1 input {
 	width:70%;
 }
 
+label {
+	
+	text-align: right;
 
-		
+	margin-right: .3em;
+	width: 4.3em;  /* I made this deliberately wide – come up with your own optimal width */
+	display: inline-block; /* width will not work for “inline” elements such as “label”. Therefore we need to set it to “inline-block” */
+}
 
+/* To remove the bullet points, we set list style to none: */
+
+/* we place the id formcol1 in front of the li element in order to limit this formatting to the top part of the form */
+
+#formcol1 li {   
+	list-style:none;
+}
+
+select:focus, select:active, input:focus, input:active, input:focus + label, input:active + label, label[for]:focus, label[for]:active {
+	color: #FFF !important;
+	background-color: #8A170A !important;}
+
+	
+#formcol1 input.reqfield {
+	background:#FF9;
+}
+	
 /* end of form css */
 	
