@@ -68,9 +68,10 @@ label {
 	
 	text-align: right;
 
-	margin-right: .3em;
-	width: 4.3em;  /* I made this deliberately wide – come up with your own optimal width */
-	display: inline-block; /* width will not work for “inline” elements such as “label”. Therefore we need to set it to “inline-block” */
+	/* margin-right: .3em; */
+	width: 2.3em;  /* I made this deliberately wide – come up with your own optimal width */
+	/* display: inline-block; width will not work for “inline” elements such as “label”. Therefore we need to set it to “inline-block” */
+	display:inline;
 }
 
 /* To remove the bullet points, we set list style to none: */
