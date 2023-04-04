@@ -1,0 +1,66 @@
+/*!
+ * Start Bootstrap - Small Business (https://startbootstrap.com/template-overviews/small-business)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-small-business/blob/master/LICENSE)
+ */
+body {
+  padding-top: 56px;
+}
+
+ol, ul {
+  padding: 5px 20px;
+  border-radius: 8px;
+}
+/* .card-body{
+  background-color: #284e76;
+} */
+
+.btn, .btn-primary, .btn-sm{
+  background-color:#0008ff !important;
+  
+}
+.nav-item{
+  background-color: #0d022c !important;
+  /* outline: solid red; */
+}
+.nav-item:active{
+  outline: red;
+}
+.card-body{
+  background-color: #62a5df !important;
+  /* #62a5df */
+}
+select:focus, select:active, input:focus, input:active, input:focus + label, input:active + label, label[for]:focus, label[for]:active {
+  color: #FFF !important;
+  background-color: #BB3D2F !important;}
+
+  .focus:focus-only{
+    outline: solid red;
+    /* ... */
+  }
+
+  /* code used from https://webaim.org/techniques/css/invisiblecontent/#cues */
+  /* hides the link itself  */
+#skip a
+{ 
+position:absolute; 
+left:-10000px; 
+top:auto; 
+width:1px; 
+height:1px; 
+overflow:hidden;
+} 
+ 
+#skip a:focus 
+{ 
+position:static; 
+width:auto; 
+height:auto; 
+color: #FFF !important;
+background-color: #BB3D2F !important;
+}
+#focus a:focus{
+  color: #FFF !important;
+background-color: #BB3D2F !important;
+}
+
