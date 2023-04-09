@@ -1,5 +1,8 @@
 h1, h2 {
     color: blue;
+    font-family: serif;
+    font-weight: normal;
+    /* padding-bottom: 1.0em; */
   }
   
   
@@ -22,9 +25,28 @@ h1, h2 {
   
   h1, strong {
     color: indigo;
+    /* font-size: 16px; */
   }
   
   em {
     color: pink;
   }
+
+  div{
+    column-gap: 40px;
+    column-count: 3;
+    column-rule-style: solid;
+    column-rule-width: 1px;
+    column-rule-color: black;
+  }
   
+  .container {
+    grid-template-columns:
+       1fr 1fr;
+    grid-template-areas:
+      "heady heady"
+      "navvy navvy"
+      "mainy mainy"
+      "aside1 aside2"
+      "footy footy";
+    }
