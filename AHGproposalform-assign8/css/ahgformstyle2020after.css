@@ -1,0 +1,143 @@
+/* CSS */
+ 
+
+
+
+
+
+#formstart {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:200%;
+	font-weight:bold;
+}
+
+.outline3 {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:150%;
+	font-weight:bold;
+}
+
+.outline4 {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:120%;
+	font-weight:bold;
+}
+
+/* @charset "ISO-8859-1"; */
+
+/* MODIFIED FROM ASSIGNMENT 5 */
+
+
+/* form styling */
+
+
+#wrapper {
+	width: 60%;
+	margin-left:4%;
+}
+
+div#formcol1 {
+	
+	float:left;	
+	width: 100%;
+}
+
+div#formcol1 label {
+	float:left;
+	width:8.3em;
+	text-align:left;
+	display:block;
+	padding-right:.3em;	
+	/* background:#E0E0DD; */
+	clear:right;
+	}
+	
+
+div#formcol1 ul li {
+	list-style-type:none;
+	margin-left:-2em;
+	margin-bottom:.4em;
+	}
+
+	
+div#formcol1 input {
+	
+	margin-left:1.5em;
+	text-align:left;
+	display:block;
+	clear:right;
+	background-color:#F4F4F4;
+	}
+
+
+/* div for radio buttons and check boxes */
+
+#multchoice {
+	clear:left;
+	margin-left:1%;	
+}
+
+#multchoice input, #multchoice span {
+	float:left;
+}
+
+#multchoice span {	
+	margin: 0 .3em;
+}
+
+.submit-button {
+	margin:2em 0;
+	float:right;
+	width:70%;
+}
+
+label {
+	
+	text-align: right;
+
+	margin-right: .3em;
+	width: 2.3em;  /* I made this deliberately wide – come up with your own optimal width */
+	/* display: inline-block; width will not work for “inline” elements such as “label”. Therefore we need to set it to “inline-block” */
+	display:inline;
+	list-style:none;
+}
+
+/* To remove the bullet points, we set list style to none: */
+
+/* we place the id formcol1 in front of the li element in order to limit this formatting to the top part of the form */
+
+li,ul {   
+	list-style:none;
+	text-align: left;
+
+	/* margin-right: .3em; */
+	/* width: 0.3em; */
+}
+
+select:focus, select:active, input:focus, input:active, input:focus + label, input:active + label, label[for]:focus, label[for]:active {
+	color: #FFF !important;
+	background-color: #8A170A !important;}
+
+	
+#formcol1 input.reqfield {
+	background:#FF9 !important;
+}
+.suggest_form{
+	text-align: left;
+}
+.submit{
+	/* margin-left:2em; */
+	margin-bottom:.4em;
+	margin-top: .4em;
+}
+
+#formcol1 input.reqfield {
+	background:#FF9;
+
+}
+:required {
+	background: yellow;
+  }
+
+	
+/* end of form css */
