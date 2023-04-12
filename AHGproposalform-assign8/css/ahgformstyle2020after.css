@@ -47,7 +47,8 @@ div#formcol1 label {
 	width:8.3em;
 	text-align:left;
 	display:block;
-	padding-right:.3em;	
+	padding-right:.3em;
+	padding-bottom: 0.2em;	
 	/* background:#E0E0DD; */
 	clear:right;
 	}
