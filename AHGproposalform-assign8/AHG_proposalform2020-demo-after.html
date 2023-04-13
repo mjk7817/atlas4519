@@ -36,12 +36,14 @@ accommodations, assistifve technology, DOJ, Department of Justice, WAI" />
 
  <main role = "main">
  <h3 class="outline4">Speaker Information</h3>
+ <em>Complete all fields that have (*)</em>
  <form action="AHG_saveprop2020.php" method="post" id="AHGproposalform2020">
   <div class="speakerinfo">
 
 
 <fieldset>
 <p><h4>1st Presenter</h4></p>
+
   <ul>
     <li>
       <label for = "fstspkr1">First Name (*):</label>
@@ -62,12 +64,12 @@ accommodations, assistifve technology, DOJ, Department of Justice, WAI" />
     </li>
     <li>
       <label for="telno1" >Phone Number (*):</label>
-      <input id="telno1" name="telno1" type="text" aria-required="true"  required/>
+      <input id="telno1" name="telno1" type="tel"pattern="[0-9]+" placeholder="3038794577" aria-required="true"  required/>
     </li>
     
     <li>
-      <label for="email1" >e-mail (*):</label>
-      <input id="email1" name="email1" type="text" aria-required="true" required />
+      <label for="email" >e-mail (*):</label>
+      <input id="email" name="email" type="email" placeholder="foo@gmail.com" aria-required="true" required />
     </li>
   </ul>
   <hr>
@@ -78,7 +80,7 @@ accommodations, assistifve technology, DOJ, Department of Justice, WAI" />
   <input value="1" id="natconfexp1_yes" name="natconfexp1" type="radio" aria-required="true" required/>
     <label for="natconfexp1_yes" >Yes</label>
     </span> <span>
-      <input value="0" id="natconfexp1_no" name="natconfexp2" type="radio" aria-required="true" required/>
+      <input value="0" id="natconfexp1_no" name="natconfexp1" type="radio" />
       <label for="natconfexp1_no" >No</label>
   </span> </div>
   
@@ -87,7 +89,7 @@ accommodations, assistifve technology, DOJ, Department of Justice, WAI" />
   <p><h4><label for="Speaker1bio">Presenter 1 Bio&nbsp;(1500 characters maximum)</label></h4></p>
   
   
-  <textarea id="Speaker1bio" name="Speaker1bio" cols="80" rows="4" maxlength="1003"></textarea>
+  <textarea id="Speaker1bio" name="Speaker1bio" cols="80" rows="4" maxlength="1500"></textarea>
 </fieldset>
 
 
@@ -108,12 +110,12 @@ accommodations, assistifve technology, DOJ, Department of Justice, WAI" />
 	
 
   <fieldset>
-    <legend><h3><span id="proplegend">Title of Proposal</span></h3> (150 characters maximum)</legend>
+    <legend><h3><span id="proplegend">Title of Proposal (150 characters maximum)</span></h3></legend>
 <ul>
 <li>
 	<label for="proptitle">Proposal Title (*):</label>
 	<input id="proptitle" name="proptitle" class="reqfield type="text" 
-    maxlength="152" />
+    maxlength="150" />
    
 </li>
 </ul>
